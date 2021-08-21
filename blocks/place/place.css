@@ -4,8 +4,8 @@
   max-width: 984px;
   grid-template-columns: repeat(2, minmax(min-content,max-content));
   grid-template-rows: repeat(3, minmax(min-content,max-content));
-  column-gap: 48px;
-  row-gap: 32px;
+  column-gap: 40px;
+  row-gap: 48px;
   justify-content: center;
   margin: 0 auto 0;
   grid-template-areas:
@@ -15,10 +15,16 @@
 .place:last-of-type {
   padding: 0;
 }
+@media screen and (max-width: 1024px) {
+  .place {
+    column-gap: 32px;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .place {
-    row-gap: 28px;
+    column-gap: 28px;
     padding-bottom: 72px;
   }
 }
