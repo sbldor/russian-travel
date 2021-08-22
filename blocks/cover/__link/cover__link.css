@@ -1,19 +1,19 @@
 .cover__link {
+  position: relative;
   box-sizing: border-box;
   background-image: url(../../../images/cover/cover-trains.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   max-width: 1184px;
-  max-height: 740px;
-  height: 62.5vw;
+  min-height: 740px;
   margin: 0 auto 0;
   display: flex;
   align-items:center;
-  box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.3) inset;
-  transition: box-shadow 0.5s ease;
   text-decoration: none;
 }
 
-.cover__link:hover {
-  box-shadow:0 0 0 500px rgba(0, 0, 0, 0.8) inset;
+@media screen and (max-width: 1184px) {
+  .cover__link {
+    min-height: 62.5vw;
+  }
 }
+

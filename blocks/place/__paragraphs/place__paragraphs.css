@@ -1,11 +1,10 @@
 .place__paragraphs {
   grid-area: prg;
   margin: 0;
-  list-style: none;
   padding: 0;
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 620px) {
   .place__paragraphs {
     max-width: 288px;
     padding: 0 16px;
